@@ -1,19 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
-  <label>Celcius</label>
+  <h2>Temprature Converter</h2>
+  <label>Celcius </label>
   <input
     type="number"
     [(ngModel)]="celcius"
     (keyup)="degToFahr()"
     id="celciusIn"
   />
-  <p>{{ celcius }}</p>
-  <label>Fahrenheit</label>
+  <br /><br />
+  <label>Fahrenheit </label>
   <input
     type="number"
     [(ngModel)]="fahrenheit"
     (keyup)="fahrToDeg()"
     id="fahrenheitIn"
   />
-  <p>{{ fahrenheit }}</p>
 </div>
