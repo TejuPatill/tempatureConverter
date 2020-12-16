@@ -11,10 +11,12 @@ export class AppComponent {
   fahrenheit;
 
   degToFahr() {
-    this.fahrenheit = (9 / 5) * this.celcius + 32;
+    if (this.celcius === null) this.fahrenheit = null;
+    else this.fahrenheit = (9 / 5) * this.celcius + 32;
   }
 
   fahrToDeg() {
-    this.celcius = (5 / 9) * (this.fahrenheit - 32);
+    if (this.fahrenheit === null) this.celcius = null;
+    else this.celcius = (5 / 9) * (this.fahrenheit - 32);
   }
 }
